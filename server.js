@@ -1,12 +1,12 @@
 var express = require("express");
-var fs = require("fs")
-var   = require("http")
-var color = require("colors")
-var NewUsers = require("./app")
-var cors = require("cors")
+var fs = require("fs");
+var http = require("http");
+var color = require("colors");
+var NewUsers = require("./app");
+var cors = require("cors");
 var app = express();
 var bodyParser = require("body-parser");
-var path= require("path")
+var path= require("path");
 // class 1
 
 
