@@ -2,7 +2,7 @@ function singup(){
     var obj ={
         email:document.getElementById("email").value
     }
-    const url = "http://localhost:3000"
+    const url = "http://localhost:3000" || "https://testing-first-class-web.herokuapp.com"
     const Http = new XMLHttpRequest();
 
     Http.open("POST", url + "/signup");
