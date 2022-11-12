@@ -10,7 +10,7 @@ var app = express()
 // }
 app.use(bodyParser.json())
 
-mongoose.connect("mongodb+srv://ahmerali:ahmerali@cluster0.slkv6.mongodb.net/ahmerali",{ useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(process.env.DB,{ useNewUrlParser: true, useUnifiedTopology: true })
 
 mongoose.connection.on("connected", ()=>{
 console.log("mongoos is connected")
